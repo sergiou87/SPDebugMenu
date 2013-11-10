@@ -10,6 +10,6 @@
 
 @interface SPDebugMenuViewController : UITableViewController
 
-- (instancetype)initWithDebugMenuActions:(NSArray *)actions;
-
+- (instancetype)initWithDebugMenuActions:(NSArray *)actions
+                              screenshot:(UIImage *)screenshot;
 @end

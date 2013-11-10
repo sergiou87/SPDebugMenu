@@ -17,7 +17,8 @@
 @property (nonatomic, readonly, copy) NSString *title;
 @property (nonatomic, readonly, copy) NSString *description;
 
-- (void)performActionWithNavigationController:(UINavigationController *)navigationController;
+- (void)performActionWithNavigationController:(UINavigationController *)navigationController
+                                   screenshot:(UIImage *)screenshot;
 
 - (BOOL)shouldDismissDebugMenuAfterFinish;
 

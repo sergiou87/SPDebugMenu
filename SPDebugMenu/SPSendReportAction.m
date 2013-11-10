@@ -16,6 +16,13 @@
 
 @implementation SPSendReportAction
 
+@synthesize delegate = _delegate;
+
+- (BOOL)shouldDismissDebugMenuAfterFinish
+{
+    return YES;
+}
+
 - (NSString *)title
 {
     return @"Send report";
@@ -27,10 +34,15 @@
 }
 
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
+                                   screenshot:(UIImage *)screenshot
 {
     MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
     controller.mailComposeDelegate = self;
     [controller setSubject:@"App user report"];
+    
+    NSData *screenshotData = UIImageJPEGRepresentation(screenshot, 0.9f);
+    [controller addAttachmentData:screenshotData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
+    
     [controller setMessageBody:@"Hello there." isHTML:NO];
     if (controller)
     {
@@ -39,13 +51,18 @@
                                          completion:nil];
     }
 
+    [self.delegate debugMenuActionDidStart:self];
 }
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller
           didFinishWithResult:(MFMailComposeResult)result
                         error:(NSError *)error
 {
-    [controller.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [controller.presentingViewController
+     dismissViewControllerAnimated:YES
+     completion:^{
+         [self.delegate debugMenuActionDidEnd:self];
+     }];
 }
 
 @end
