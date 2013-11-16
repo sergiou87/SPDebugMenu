@@ -10,6 +10,8 @@
 
 #import <MessageUI/MessageUI.h>
 
+#import "SPSendReportStatusGetting.h"
+
 @interface SPSendReportAction () <MFMailComposeViewControllerDelegate>
 
 @end
@@ -43,7 +45,7 @@
     NSData *screenshotData = UIImageJPEGRepresentation(screenshot, 0.9f);
     [controller addAttachmentData:screenshotData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
     
-    [controller setMessageBody:@"Hello there." isHTML:NO];
+    [controller setMessageBody:self.statusGetting.currentStatus isHTML:NO];
     if (controller)
     {
         [navigationController presentViewController:controller

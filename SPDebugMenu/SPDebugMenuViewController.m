@@ -39,8 +39,18 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
     
     self.title = @"Debug menu";
     
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                                  target:self
+                                                                                  action:@selector(cancelButtonTapped)];
+    [self.navigationItem setLeftBarButtonItem:cancelButton];
+    
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:kDebugMenuCellIdentifier];
+}
+
+- (void)cancelButtonTapped
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
@@ -58,7 +68,7 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDebugMenuCellIdentifier forIndexPath:indexPath];
-    
+
     // Configure the cell...
     id<SPDebugMenuAction> action = self.actions[indexPath.row];
     cell.textLabel.text = action.title;

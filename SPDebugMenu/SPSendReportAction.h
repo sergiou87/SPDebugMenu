@@ -8,6 +8,10 @@
 
 #import "SPDebugMenuAction.h"
 
+@protocol SPSendReportStatusGetting;
+
 @interface SPSendReportAction : NSObject <SPDebugMenuAction>
+
+@property (nonatomic, strong) id<SPSendReportStatusGetting> statusGetting;
 
 @end

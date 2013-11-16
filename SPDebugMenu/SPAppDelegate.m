@@ -9,6 +9,8 @@
 #import "SPAppDelegate.h"
 
 #import "SPDebugMenu.h"
+#import "SPDebugMenuLongPressTrigger.h"
+#import "SPDebugMenuTapTrigger.h"
 #import "SPDebugMenuShakeTrigger.h"
 #import "SPShakeTriggerWindow.h"
 #import "SPSendReportAction.h"
@@ -24,20 +26,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SPDebugMenuShakeTrigger *trigger = [[SPDebugMenuShakeTrigger alloc] init];
+    // Configure a shake trigger (requires a ShakeTriggerWindow
+    SPDebugMenuShakeTrigger *shakeTrigger = [[SPDebugMenuShakeTrigger alloc] init];
 
     SPShakeTriggerWindow *shakeTriggerWindow = [[SPShakeTriggerWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    shakeTriggerWindow.shakeTrigger = trigger;
-    self.window = shakeTriggerWindow;    
-
-    self.debugMenu = [[SPDebugMenu alloc] initWithWindow:self.window];
-    [self.debugMenu registerTrigger:trigger];
-    
-    [self.debugMenu registerAction:[[SPSendReportAction alloc] init]];
+    shakeTriggerWindow.shakeTrigger = shakeTrigger;
+    self.window = shakeTriggerWindow;
 
     SPViewController *viewController = [[SPViewController alloc] init];
     self.window.rootViewController = viewController;
     
+    // Configure a tap trigger (5 taps with 2 fingers)
+    SPDebugMenuTapTrigger *tapTrigger = [[SPDebugMenuTapTrigger alloc] init];
+    tapTrigger.view = viewController.view;
+    tapTrigger.numberOfTouchesRequired = 2;
+    tapTrigger.numberOfTapsRequired = 5;
+    
+    // Configure a long press trigger (with 2 fingers)
+    SPDebugMenuLongPressTrigger *longPressTrigger = [[SPDebugMenuLongPressTrigger alloc] init];
+    longPressTrigger.view = viewController.view;
+    longPressTrigger.numberOfTouchesRequired = 2;
+
+    // Configure the debug menu
+    self.debugMenu = [[SPDebugMenu alloc] initWithWindow:self.window];
+    [self.debugMenu registerTrigger:shakeTrigger];
+    [self.debugMenu registerTrigger:tapTrigger];
+    [self.debugMenu registerTrigger:longPressTrigger];
+    
+    [self.debugMenu registerAction:[[SPSendReportAction alloc] init]];
+
     [self.window makeKeyAndVisible];
     
     return YES;
