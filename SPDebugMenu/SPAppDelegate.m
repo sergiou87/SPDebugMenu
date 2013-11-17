@@ -71,6 +71,7 @@
     immediateChangeSettingAction.settings = settings;
     [self.debugMenu registerAction:immediateChangeSettingAction];
     
+    // Configure a view-based change action
     SPViewBasedChangeSettingAction *viewBasedChangeSettingAction = [[SPViewBasedChangeSettingAction alloc] init];
     viewBasedChangeSettingAction.settings = settings;
     [self.debugMenu registerAction:viewBasedChangeSettingAction];
@@ -105,11 +106,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    NSLog(@"jare");
 }
 
 @end
