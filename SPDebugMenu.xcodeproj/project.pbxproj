@@ -10,6 +10,8 @@
 		40070FEC1838D97A00EF565C /* SPImmediateChangeSettingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */; };
 		40070FF01838E60100EF565C /* SPViewBasedChangeSettingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */; };
 		40070FF51838E74600EF565C /* SPDebugMenuActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */; };
+		40070FF91838EBD800EF565C /* SPChangeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */; };
+		40070FFA1838EBD800EF565C /* SPChangeSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */; };
 		400DC8521837A73A005EE481 /* SPExampleStatusGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */; };
 		400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8541837A823005EE481 /* SPExampleSettings.m */; };
 		401394A6182FA6BB00CF45F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394A5182FA6BB00CF45F6 /* Foundation.framework */; };
@@ -52,6 +54,9 @@
 		40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewBasedChangeSettingAction.m; sourceTree = "<group>"; };
 		40070FF31838E74600EF565C /* SPDebugMenuActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuActionCell.h; sourceTree = "<group>"; };
 		40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuActionCell.m; sourceTree = "<group>"; };
+		40070FF61838EBD800EF565C /* SPChangeSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChangeSettingViewController.h; sourceTree = "<group>"; };
+		40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChangeSettingViewController.m; sourceTree = "<group>"; };
+		40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPChangeSettingViewController.xib; sourceTree = "<group>"; };
 		400DC8501837A73A005EE481 /* SPExampleStatusGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleStatusGetter.h; sourceTree = "<group>"; };
 		400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleStatusGetter.m; sourceTree = "<group>"; };
 		400DC8531837A823005EE481 /* SPExampleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleSettings.h; sourceTree = "<group>"; };
@@ -153,6 +158,9 @@
 			children = (
 				40070FEE1838E60100EF565C /* SPViewBasedChangeSettingAction.h */,
 				40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */,
+				40070FF61838EBD800EF565C /* SPChangeSettingViewController.h */,
+				40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */,
+				40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */,
 			);
 			name = "View-based change setting";
 			sourceTree = "<group>";
@@ -375,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40070FFA1838EBD800EF565C /* SPChangeSettingViewController.xib in Resources */,
 				401394C1182FA6BB00CF45F6 /* Images.xcassets in Resources */,
 				4013953D182FB14A00CF45F6 /* SPViewController.xib in Resources */,
 				401394B0182FA6BB00CF45F6 /* InfoPlist.strings in Resources */,
@@ -396,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40070FF91838EBD800EF565C /* SPChangeSettingViewController.m in Sources */,
 				401394B2182FA6BB00CF45F6 /* main.m in Sources */,
 				401394B6182FA6BB00CF45F6 /* SPAppDelegate.m in Sources */,
 				400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */,

@@ -8,6 +8,12 @@
 
 #import "SPViewBasedChangeSettingAction.h"
 
+#import "SPChangeSettingViewController.h"
+
+@interface SPViewBasedChangeSettingAction () <SPChangeSettingViewControllerDelegate>
+
+@end
+
 @implementation SPViewBasedChangeSettingAction
 
 @synthesize delegate = _delegate;
@@ -25,7 +31,12 @@
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
                                    screenshot:(UIImage *)screenshot
 {
+    [self.delegate debugMenuActionDidStart:self];
     
+    SPChangeSettingViewController *controller = [[SPChangeSettingViewController alloc] init];
+    controller.delegate = self;
+    controller.settings = self.settings;
+    [navigationController pushViewController:controller animated:YES];
 }
 
 - (BOOL)shouldDismissDebugMenuAfterFinish
@@ -36,6 +47,13 @@
 - (BOOL)shouldReloadDebugMenuAfterFinish
 {
     return YES;
+}
+
+#pragma mark - SPChangeSettingViewControllerDelegate methods
+
+- (void)changeSettingViewControllerDidFinish:(SPChangeSettingViewController *)controller
+{
+    [self.delegate debugMenuActionDidEnd:self];
 }
 
 @end

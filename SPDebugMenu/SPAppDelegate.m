@@ -17,6 +17,7 @@
 #import "SPImmediateChangeSettingAction.h"
 #import "SPShakeTriggerWindow.h"
 #import "SPSendReportAction.h"
+#import "SPViewBasedChangeSettingAction.h"
 #import "SPViewController.h"
 
 @interface SPAppDelegate ()
@@ -69,6 +70,10 @@
     SPImmediateChangeSettingAction *immediateChangeSettingAction = [[SPImmediateChangeSettingAction alloc] init];
     immediateChangeSettingAction.settings = settings;
     [self.debugMenu registerAction:immediateChangeSettingAction];
+    
+    SPViewBasedChangeSettingAction *viewBasedChangeSettingAction = [[SPViewBasedChangeSettingAction alloc] init];
+    viewBasedChangeSettingAction.settings = settings;
+    [self.debugMenu registerAction:viewBasedChangeSettingAction];
 
     [self.window makeKeyAndVisible];
     
