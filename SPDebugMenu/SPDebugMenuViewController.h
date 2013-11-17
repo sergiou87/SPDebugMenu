@@ -14,8 +14,7 @@
 
 @property (nonatomic, weak) id<SPDebugMenuViewControllerDelegate> delegate;
 
-- (instancetype)initWithDebugMenuActions:(NSArray *)actions
-                              screenshot:(UIImage *)screenshot;
+- (instancetype)initWithDebugMenuActions:(NSArray *)actions;
 
 @end
 

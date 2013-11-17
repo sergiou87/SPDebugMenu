@@ -16,20 +16,17 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
 @interface SPDebugMenuViewController () <SPDebugMenuActionDelegate>
 
 @property (nonatomic, copy) NSArray *actions;
-@property (nonatomic, strong) UIImage *screenshot;
 
 @end
 
 @implementation SPDebugMenuViewController
 
 - (instancetype)initWithDebugMenuActions:(NSArray *)actions
-                              screenshot:(UIImage *)screenshot
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self)
     {
         _actions = [actions copy];
-        _screenshot = screenshot;
     }
     return self;
 }
@@ -73,7 +70,7 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
     // Configure the cell...
     id<SPDebugMenuAction> action = self.actions[indexPath.row];
     cell.textLabel.text = action.title;
-    cell.detailTextLabel.text = action.description;
+    cell.detailTextLabel.text = action.detailedDescription;
     
     return cell;
 }
@@ -83,8 +80,7 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
     id<SPDebugMenuAction> action = self.actions[indexPath.row];
     action.delegate = self;
 
-    [action performActionWithNavigationController:self.navigationController
-                                       screenshot:self.screenshot];
+    [action performActionWithNavigationController:self.navigationController];
 }
 
 #pragma mark - SPDebugMenuActionDelegate methods

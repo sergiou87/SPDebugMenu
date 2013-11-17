@@ -19,19 +19,28 @@
     return [NSString stringWithFormat:@"Change setting (current value: %@)", self.settings.someSetting ? @"YES" : @"NO"];
 }
 
-- (NSString *)description
+- (NSString *)detailedDescription
 {
     return @"Toggle setting value";
 }
 
+- (void)prepare
+{
+    // Do nothing
+}
+
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
-                                   screenshot:(UIImage *)screenshot
 {
     [self.delegate debugMenuActionDidStart:self];
     
     self.settings.someSetting = !self.settings.someSetting;
     
     [self.delegate debugMenuActionDidEnd:self];
+}
+
+- (void)dispose
+{
+    // Do nothing
 }
 
 - (BOOL)shouldDismissDebugMenuAfterFinish

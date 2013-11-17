@@ -23,13 +23,17 @@
     return @"Change settings…";
 }
 
-- (NSString *)description
+- (NSString *)detailedDescription
 {
     return @"Pushes a view controller where you can change the settings.";
 }
 
+- (void)prepare
+{
+    // Do nothing
+}
+
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
-                                   screenshot:(UIImage *)screenshot
 {
     [self.delegate debugMenuActionDidStart:self];
     
@@ -37,6 +41,11 @@
     controller.delegate = self;
     controller.settings = self.settings;
     [navigationController pushViewController:controller animated:YES];
+}
+
+- (void)dispose
+{
+    // Do nothing
 }
 
 - (BOOL)shouldDismissDebugMenuAfterFinish

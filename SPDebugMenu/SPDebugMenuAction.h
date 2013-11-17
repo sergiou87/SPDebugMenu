@@ -15,10 +15,11 @@
 @property (nonatomic, weak) id<SPDebugMenuActionDelegate> delegate;
 
 @property (nonatomic, readonly, copy) NSString *title;
-@property (nonatomic, readonly, copy) NSString *description;
+@property (nonatomic, readonly, copy) NSString *detailedDescription;
 
-- (void)performActionWithNavigationController:(UINavigationController *)navigationController
-                                   screenshot:(UIImage *)screenshot;
+- (void)prepare;
+- (void)performActionWithNavigationController:(UINavigationController *)navigationController;
+- (void)dispose;
 
 - (BOOL)shouldDismissDebugMenuAfterFinish;
 - (BOOL)shouldReloadDebugMenuAfterFinish;
