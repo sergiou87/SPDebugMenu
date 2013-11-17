@@ -13,12 +13,19 @@
 
 @interface SPDebugMenu : NSObject
 
+/// Initializer with the window where the menu will be shown
 - (id)initWithWindow:(UIWindow *)window;
 
+/// Registers a trigger and sets itself as trigger's delegate
 - (void)registerTrigger:(id<SPDebugMenuTriggering>)trigger;
+
+/// Unregisters all triggers
 - (void)unregisterAllTriggers;
 
+/// Registers an action
 - (void)registerAction:(id<SPDebugMenuAction>)action;
+
+/// Unregisters all actions
 - (void)unregisterAllActions;
 
 @end

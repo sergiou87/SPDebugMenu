@@ -60,10 +60,10 @@
     [self.debugMenu registerTrigger:longPressTrigger];
 
     // Configure a "Send report" action
-    SPExampleStatusComposer *statusGetter = [[SPExampleStatusComposer alloc] init];
-    statusGetter.settings = settings;
+    SPExampleStatusComposer *statusComposer = [[SPExampleStatusComposer alloc] init];
+    statusComposer.settings = settings;
     SPSendReportAction *sendReportAction = [[SPSendReportAction alloc] init];
-    sendReportAction.statusGetting = statusGetter;
+    sendReportAction.statusComposer = statusComposer;
     [self.debugMenu registerAction:sendReportAction];
 
     // Configure an immediate change action

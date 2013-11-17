@@ -10,6 +10,8 @@
 
 @class SPDebugMenuShakeTrigger;
 
+/// This subclass of UIWindow can send shake notifications to a shake trigger.
+/// Useful in debug to show the debug menu with a shake motion.
 @interface SPShakeTriggerWindow : UIWindow
 
 @property (nonatomic, strong) SPDebugMenuShakeTrigger *shakeTrigger;

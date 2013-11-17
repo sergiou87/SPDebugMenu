@@ -10,8 +10,11 @@
 
 @protocol SPSendReportStatusComposing;
 
+/// This debug action allows the user to send a report with the current state of the app
+/// and a screenshot as attachment.
 @interface SPSendReportAction : NSObject <SPDebugMenuAction>
 
-@property (nonatomic, strong) id<SPSendReportStatusComposing> statusGetting;
+/// Composer from which the action will get the information to send in the e-mail
+@property (nonatomic, strong) id<SPSendReportStatusComposing> statusComposer;
 
 @end

@@ -8,8 +8,10 @@
 
 #import "SPDebugMenuTriggering.h"
 
+/// Shake-based trigger for the debug menu.
 @interface SPDebugMenuShakeTrigger : NSObject <SPDebugMenuTriggering>
 
-- (void)shakeMotionInWindow:(UIWindow *)window;
+/// Called by the view detecting the shake motion
+- (void)shakeMotionInView:(UIView *)view;
 
 @end

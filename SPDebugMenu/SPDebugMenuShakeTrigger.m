@@ -16,7 +16,7 @@
 
 @synthesize delegate = _delegate;
 
-- (void)shakeMotionInWindow:(UIWindow *)window
+- (void)shakeMotionInView:(UIView *)view
 {
     [self.delegate debugMenuWasTriggered:self];
 }

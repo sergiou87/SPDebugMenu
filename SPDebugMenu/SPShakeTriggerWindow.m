@@ -18,7 +18,7 @@
     
     if (motion == UIEventSubtypeMotionShake)
     {
-        [self.shakeTrigger shakeMotionInWindow:self];
+        [self.shakeTrigger shakeMotionInView:self];
     }
 }
 

@@ -8,8 +8,11 @@
 
 #import "SPDebugMenuTriggering.h"
 
+/// Tap based trigger for the debug menu. You can configure the number of taps
+/// and touches required to trigger.
 @interface SPDebugMenuTapTrigger : NSObject <SPDebugMenuTriggering>
 
+/// View that has to be tapped to trigger
 @property (nonatomic, strong) UIView *view;
 
 @property (nonatomic) NSUInteger numberOfTapsRequired;

@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+/// Classes conforming this protocol will be able to create the state of the app string
+/// that will be send in the "Send report" debug action.
 @protocol SPSendReportStatusComposing <NSObject>
 
+/// App status string
 - (NSString *)currentStatus;
 
 @end

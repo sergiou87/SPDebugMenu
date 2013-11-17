@@ -92,7 +92,7 @@
     NSData *screenshotData = UIImageJPEGRepresentation(self.screenshot, 0.9f);
     [controller addAttachmentData:screenshotData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
     
-    [controller setMessageBody:self.statusGetting.currentStatus isHTML:NO];
+    [controller setMessageBody:self.statusComposer.currentStatus isHTML:NO];
     if (controller)
     {
         [navigationController presentViewController:controller
