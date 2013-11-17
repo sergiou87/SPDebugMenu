@@ -12,6 +12,9 @@
 #import "SPDebugMenuLongPressTrigger.h"
 #import "SPDebugMenuTapTrigger.h"
 #import "SPDebugMenuShakeTrigger.h"
+#import "SPExampleSettings.h"
+#import "SPExampleStatusGetter.h"
+#import "SPImmediateChangeSettingAction.h"
 #import "SPShakeTriggerWindow.h"
 #import "SPSendReportAction.h"
 #import "SPViewController.h"
@@ -26,34 +29,46 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Configure a shake trigger (requires a ShakeTriggerWindow
-    SPDebugMenuShakeTrigger *shakeTrigger = [[SPDebugMenuShakeTrigger alloc] init];
-
+    SPExampleSettings *settings = [[SPExampleSettings alloc] init];
+    
     SPShakeTriggerWindow *shakeTriggerWindow = [[SPShakeTriggerWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    shakeTriggerWindow.shakeTrigger = shakeTrigger;
     self.window = shakeTriggerWindow;
-
+    
     SPViewController *viewController = [[SPViewController alloc] init];
     self.window.rootViewController = viewController;
     
-    // Configure a tap trigger (5 taps with 2 fingers)
-    SPDebugMenuTapTrigger *tapTrigger = [[SPDebugMenuTapTrigger alloc] init];
-    tapTrigger.view = viewController.view;
-    tapTrigger.numberOfTouchesRequired = 2;
-    tapTrigger.numberOfTapsRequired = 5;
-    
-    // Configure a long press trigger (with 2 fingers)
-    SPDebugMenuLongPressTrigger *longPressTrigger = [[SPDebugMenuLongPressTrigger alloc] init];
-    longPressTrigger.view = viewController.view;
-    longPressTrigger.numberOfTouchesRequired = 2;
-
     // Configure the debug menu
     self.debugMenu = [[SPDebugMenu alloc] initWithWindow:self.window];
+
+    // Configure a shake trigger (requires a ShakeTriggerWindow
+    SPDebugMenuShakeTrigger *shakeTrigger = [[SPDebugMenuShakeTrigger alloc] init];
+    shakeTriggerWindow.shakeTrigger = shakeTrigger;
     [self.debugMenu registerTrigger:shakeTrigger];
-    [self.debugMenu registerTrigger:tapTrigger];
-    [self.debugMenu registerTrigger:longPressTrigger];
     
-    [self.debugMenu registerAction:[[SPSendReportAction alloc] init]];
+    // Configure a tap trigger (5 taps with 2 fingers)
+    SPDebugMenuTapTrigger *tapTrigger = [[SPDebugMenuTapTrigger alloc] init];
+    tapTrigger.view = self.window;
+    tapTrigger.numberOfTouchesRequired = 2;
+    tapTrigger.numberOfTapsRequired = 5;
+    [self.debugMenu registerTrigger:tapTrigger];
+
+    // Configure a long press trigger (with 2 fingers)
+    SPDebugMenuLongPressTrigger *longPressTrigger = [[SPDebugMenuLongPressTrigger alloc] init];
+    longPressTrigger.view = self.window;
+    longPressTrigger.numberOfTouchesRequired = 2;
+    [self.debugMenu registerTrigger:longPressTrigger];
+
+    // Configure a "Send report" action
+    SPExampleStatusGetter *statusGetter = [[SPExampleStatusGetter alloc] init];
+    statusGetter.settings = settings;
+    SPSendReportAction *sendReportAction = [[SPSendReportAction alloc] init];
+    sendReportAction.statusGetting = statusGetter;
+    [self.debugMenu registerAction:sendReportAction];
+
+    // Configure an immediate change action
+    SPImmediateChangeSettingAction *immediateChangeSettingAction = [[SPImmediateChangeSettingAction alloc] init];
+    immediateChangeSettingAction.settings = settings;
+    [self.debugMenu registerAction:immediateChangeSettingAction];
 
     [self.window makeKeyAndVisible];
     

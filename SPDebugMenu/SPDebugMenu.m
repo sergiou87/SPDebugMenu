@@ -14,10 +14,7 @@
 
 #pragma mark - SPDebugMenu class extension
 
-@interface SPDebugMenu () <
-    SPDebugMenuTriggeringDelegate,
-    SPDebugMenuActionDelegate
->
+@interface SPDebugMenu () <SPDebugMenuTriggeringDelegate>
 
 @property (nonatomic, weak) UIWindow *window;
 
@@ -61,7 +58,6 @@
 
 - (void)registerAction:(id<SPDebugMenuAction>)action
 {
-    action.delegate = self;
     [self.actions addObject:action];
 }
 
@@ -139,21 +135,6 @@
 - (void)debugMenuWasTriggered:(id<SPDebugMenuTriggering>)sender
 {
     [self showDebugMenu];
-}
-
-#pragma mark - SPDebugMenuActionDelegate methods
-
-- (void)debugMenuActionDidStart:(id<SPDebugMenuAction>)action
-{
-    
-}
-
-- (void)debugMenuActionDidEnd:(id<SPDebugMenuAction>)action
-{
-    if ([action shouldDismissDebugMenuAfterFinish])
-    {
-        [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
-    }
 }
 
 @end

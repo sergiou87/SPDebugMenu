@@ -21,6 +21,7 @@
                                    screenshot:(UIImage *)screenshot;
 
 - (BOOL)shouldDismissDebugMenuAfterFinish;
+- (BOOL)shouldReloadDebugMenuAfterFinish;
 
 @end
 

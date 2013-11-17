@@ -12,7 +12,7 @@
 
 static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
 
-@interface SPDebugMenuViewController ()
+@interface SPDebugMenuViewController () <SPDebugMenuActionDelegate>
 
 @property (nonatomic, copy) NSArray *actions;
 @property (nonatomic, strong) UIImage *screenshot;
@@ -80,9 +80,31 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id<SPDebugMenuAction> action = self.actions[indexPath.row];
-    
+    action.delegate = self;
+
     [action performActionWithNavigationController:self.navigationController
                                        screenshot:self.screenshot];
+}
+
+#pragma mark - SPDebugMenuActionDelegate methods
+
+- (void)debugMenuActionDidStart:(id<SPDebugMenuAction>)action
+{
+    
+}
+
+- (void)debugMenuActionDidEnd:(id<SPDebugMenuAction>)action
+{
+    action.delegate = nil;
+    
+    if ([action shouldDismissDebugMenuAfterFinish])
+    {
+        [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    }
+    else if ([action shouldReloadDebugMenuAfterFinish])
+    {
+        [self.tableView reloadData];
+    }
 }
 
 @end

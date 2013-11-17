@@ -12,4 +12,5 @@
 
 - (instancetype)initWithDebugMenuActions:(NSArray *)actions
                               screenshot:(UIImage *)screenshot;
+
 @end

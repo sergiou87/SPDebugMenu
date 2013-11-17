@@ -20,11 +20,6 @@
 
 @synthesize delegate = _delegate;
 
-- (BOOL)shouldDismissDebugMenuAfterFinish
-{
-    return YES;
-}
-
 - (NSString *)title
 {
     return @"Send report";
@@ -65,6 +60,16 @@
      completion:^{
          [self.delegate debugMenuActionDidEnd:self];
      }];
+}
+
+- (BOOL)shouldDismissDebugMenuAfterFinish
+{
+    return YES;
+}
+
+- (BOOL)shouldReloadDebugMenuAfterFinish
+{
+    return NO;
 }
 
 @end
