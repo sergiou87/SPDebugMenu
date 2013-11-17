@@ -12,7 +12,7 @@
 		40070FF51838E74600EF565C /* SPDebugMenuActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */; };
 		40070FF91838EBD800EF565C /* SPChangeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */; };
 		40070FFA1838EBD800EF565C /* SPChangeSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */; };
-		400DC8521837A73A005EE481 /* SPExampleStatusGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */; };
+		400DC8521837A73A005EE481 /* SPExampleStatusComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8511837A73A005EE481 /* SPExampleStatusComposer.m */; };
 		400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8541837A823005EE481 /* SPExampleSettings.m */; };
 		401394A6182FA6BB00CF45F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394A5182FA6BB00CF45F6 /* Foundation.framework */; };
 		401394A8182FA6BB00CF45F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394A7182FA6BB00CF45F6 /* CoreGraphics.framework */; };
@@ -57,8 +57,8 @@
 		40070FF61838EBD800EF565C /* SPChangeSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChangeSettingViewController.h; sourceTree = "<group>"; };
 		40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChangeSettingViewController.m; sourceTree = "<group>"; };
 		40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPChangeSettingViewController.xib; sourceTree = "<group>"; };
-		400DC8501837A73A005EE481 /* SPExampleStatusGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleStatusGetter.h; sourceTree = "<group>"; };
-		400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleStatusGetter.m; sourceTree = "<group>"; };
+		400DC8501837A73A005EE481 /* SPExampleStatusComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleStatusComposer.h; sourceTree = "<group>"; };
+		400DC8511837A73A005EE481 /* SPExampleStatusComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleStatusComposer.m; sourceTree = "<group>"; };
 		400DC8531837A823005EE481 /* SPExampleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleSettings.h; sourceTree = "<group>"; };
 		400DC8541837A823005EE481 /* SPExampleSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleSettings.m; sourceTree = "<group>"; };
 		401394A2182FA6BB00CF45F6 /* SPDebugMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPDebugMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +94,7 @@
 		40139544182FB82300CF45F6 /* SPSendReportAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSendReportAction.m; sourceTree = "<group>"; };
 		401DBB5C1837902F00383BD4 /* SPDebugMenuLongPressTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuLongPressTrigger.h; sourceTree = "<group>"; };
 		401DBB5D1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuLongPressTrigger.m; sourceTree = "<group>"; };
-		4046FD6B183780CC004F95C2 /* SPSendReportStatusGetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSendReportStatusGetting.h; sourceTree = "<group>"; };
+		4046FD6B183780CC004F95C2 /* SPSendReportStatusComposing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSendReportStatusComposing.h; sourceTree = "<group>"; };
 		4046FD6E18378376004F95C2 /* SPDebugMenuTapTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuTapTrigger.h; sourceTree = "<group>"; };
 		4046FD6F18378376004F95C2 /* SPDebugMenuTapTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuTapTrigger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,8 +138,8 @@
 		40070FE91838D6E000EF565C /* Send report status getter */ = {
 			isa = PBXGroup;
 			children = (
-				400DC8501837A73A005EE481 /* SPExampleStatusGetter.h */,
-				400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */,
+				400DC8501837A73A005EE481 /* SPExampleStatusComposer.h */,
+				400DC8511837A73A005EE481 /* SPExampleStatusComposer.m */,
 			);
 			name = "Send report status getter";
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 			children = (
 				40139543182FB82300CF45F6 /* SPSendReportAction.h */,
 				40139544182FB82300CF45F6 /* SPSendReportAction.m */,
-				4046FD6B183780CC004F95C2 /* SPSendReportStatusGetting.h */,
+				4046FD6B183780CC004F95C2 /* SPSendReportStatusComposing.h */,
 			);
 			name = "Send report action";
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 				401DBB5E1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m in Sources */,
 				40139545182FB82300CF45F6 /* SPSendReportAction.m in Sources */,
 				4046FD7018378376004F95C2 /* SPDebugMenuTapTrigger.m in Sources */,
-				400DC8521837A73A005EE481 /* SPExampleStatusGetter.m in Sources */,
+				400DC8521837A73A005EE481 /* SPExampleStatusComposer.m in Sources */,
 				40139540182FB2BC00CF45F6 /* SPShakeTriggerWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

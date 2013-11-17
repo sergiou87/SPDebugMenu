@@ -10,7 +10,7 @@
 
 #import <MessageUI/MessageUI.h>
 
-#import "SPSendReportStatusGetting.h"
+#import "SPSendReportStatusComposing.h"
 
 @interface SPSendReportAction () <MFMailComposeViewControllerDelegate>
 

@@ -1,5 +1,5 @@
 //
-//  SPSendReportStatusGetting.h
+//  SPSendReportStatusComposing.h
 //  SPDebugMenu
 //
 //  Created by Sergio Padrino on 16/11/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol SPSendReportStatusGetting <NSObject>
+@protocol SPSendReportStatusComposing <NSObject>
 
 - (NSString *)currentStatus;
 

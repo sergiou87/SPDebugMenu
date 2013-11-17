@@ -13,7 +13,7 @@
 #import "SPDebugMenuTapTrigger.h"
 #import "SPDebugMenuShakeTrigger.h"
 #import "SPExampleSettings.h"
-#import "SPExampleStatusGetter.h"
+#import "SPExampleStatusComposer.h"
 #import "SPImmediateChangeSettingAction.h"
 #import "SPShakeTriggerWindow.h"
 #import "SPSendReportAction.h"
@@ -60,7 +60,7 @@
     [self.debugMenu registerTrigger:longPressTrigger];
 
     // Configure a "Send report" action
-    SPExampleStatusGetter *statusGetter = [[SPExampleStatusGetter alloc] init];
+    SPExampleStatusComposer *statusGetter = [[SPExampleStatusComposer alloc] init];
     statusGetter.settings = settings;
     SPSendReportAction *sendReportAction = [[SPSendReportAction alloc] init];
     sendReportAction.statusGetting = statusGetter;
