@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		40070FEC1838D97A00EF565C /* SPImmediateChangeSettingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */; };
+		40070FF01838E60100EF565C /* SPViewBasedChangeSettingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */; };
+		40070FF51838E74600EF565C /* SPDebugMenuActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */; };
 		400DC8521837A73A005EE481 /* SPExampleStatusGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */; };
 		400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8541837A823005EE481 /* SPExampleSettings.m */; };
 		401394A6182FA6BB00CF45F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394A5182FA6BB00CF45F6 /* Foundation.framework */; };
@@ -46,6 +48,10 @@
 /* Begin PBXFileReference section */
 		40070FEA1838D97A00EF565C /* SPImmediateChangeSettingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPImmediateChangeSettingAction.h; sourceTree = "<group>"; };
 		40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPImmediateChangeSettingAction.m; sourceTree = "<group>"; };
+		40070FEE1838E60100EF565C /* SPViewBasedChangeSettingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPViewBasedChangeSettingAction.h; sourceTree = "<group>"; };
+		40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewBasedChangeSettingAction.m; sourceTree = "<group>"; };
+		40070FF31838E74600EF565C /* SPDebugMenuActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuActionCell.h; sourceTree = "<group>"; };
+		40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuActionCell.m; sourceTree = "<group>"; };
 		400DC8501837A73A005EE481 /* SPExampleStatusGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleStatusGetter.h; sourceTree = "<group>"; };
 		400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleStatusGetter.m; sourceTree = "<group>"; };
 		400DC8531837A823005EE481 /* SPExampleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleSettings.h; sourceTree = "<group>"; };
@@ -115,11 +121,11 @@
 		40070FE81838D6D000EF565C /* Example actions */ = {
 			isa = PBXGroup;
 			children = (
+				40070FF11838E6CB00EF565C /* View-based change setting */,
+				40070FED1838E5DB00EF565C /* Immediate change setting */,
 				40070FE91838D6E000EF565C /* Send report status getter */,
 				400DC8531837A823005EE481 /* SPExampleSettings.h */,
 				400DC8541837A823005EE481 /* SPExampleSettings.m */,
-				40070FEA1838D97A00EF565C /* SPImmediateChangeSettingAction.h */,
-				40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */,
 			);
 			name = "Example actions";
 			sourceTree = "<group>";
@@ -131,6 +137,35 @@
 				400DC8511837A73A005EE481 /* SPExampleStatusGetter.m */,
 			);
 			name = "Send report status getter";
+			sourceTree = "<group>";
+		};
+		40070FED1838E5DB00EF565C /* Immediate change setting */ = {
+			isa = PBXGroup;
+			children = (
+				40070FEA1838D97A00EF565C /* SPImmediateChangeSettingAction.h */,
+				40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */,
+			);
+			name = "Immediate change setting";
+			sourceTree = "<group>";
+		};
+		40070FF11838E6CB00EF565C /* View-based change setting */ = {
+			isa = PBXGroup;
+			children = (
+				40070FEE1838E60100EF565C /* SPViewBasedChangeSettingAction.h */,
+				40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */,
+			);
+			name = "View-based change setting";
+			sourceTree = "<group>";
+		};
+		40070FF21838E6F400EF565C /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				401394E2182FAAC900CF45F6 /* SPDebugMenuViewController.h */,
+				401394E3182FAAC900CF45F6 /* SPDebugMenuViewController.m */,
+				40070FF31838E74600EF565C /* SPDebugMenuActionCell.h */,
+				40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */,
+			);
+			name = "View controller";
 			sourceTree = "<group>";
 		};
 		40139499182FA6BB00CF45F6 = {
@@ -215,11 +250,10 @@
 				4046FD6D1837835F004F95C2 /* Tap trigger */,
 				40139541182FB3B400CF45F6 /* Shake trigger */,
 				4046FD6C1837833B004F95C2 /* Send report action */,
+				40070FF21838E6F400EF565C /* View controller */,
 				401394DE182FA8D600CF45F6 /* SPDebugMenu.h */,
 				401394DF182FA8D600CF45F6 /* SPDebugMenu.m */,
 				401394E1182FA8E900CF45F6 /* SPDebugMenuTriggering.h */,
-				401394E2182FAAC900CF45F6 /* SPDebugMenuViewController.h */,
-				401394E3182FAAC900CF45F6 /* SPDebugMenuViewController.m */,
 				40139542182FB40100CF45F6 /* SPDebugMenuAction.h */,
 			);
 			name = "Debug menu";
@@ -365,11 +399,13 @@
 				401394B2182FA6BB00CF45F6 /* main.m in Sources */,
 				401394B6182FA6BB00CF45F6 /* SPAppDelegate.m in Sources */,
 				400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */,
+				40070FF51838E74600EF565C /* SPDebugMenuActionCell.m in Sources */,
 				40070FEC1838D97A00EF565C /* SPImmediateChangeSettingAction.m in Sources */,
 				401394E7182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.m in Sources */,
 				4013953C182FB14A00CF45F6 /* SPViewController.m in Sources */,
 				401394E0182FA8D600CF45F6 /* SPDebugMenu.m in Sources */,
 				401394E4182FAAC900CF45F6 /* SPDebugMenuViewController.m in Sources */,
+				40070FF01838E60100EF565C /* SPViewBasedChangeSettingAction.m in Sources */,
 				401DBB5E1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m in Sources */,
 				40139545182FB82300CF45F6 /* SPSendReportAction.m in Sources */,
 				4046FD7018378376004F95C2 /* SPDebugMenuTapTrigger.m in Sources */,

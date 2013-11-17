@@ -9,6 +9,7 @@
 #import "SPDebugMenuViewController.h"
 
 #import "SPDebugMenuAction.h"
+#import "SPDebugMenuActionCell.h"
 
 static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
 
@@ -44,13 +45,13 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
                                                                                   action:@selector(cancelButtonTapped)];
     [self.navigationItem setLeftBarButtonItem:cancelButton];
     
-    [self.tableView registerClass:[UITableViewCell class]
+    [self.tableView registerClass:[SPDebugMenuActionCell class]
            forCellReuseIdentifier:kDebugMenuCellIdentifier];
 }
 
 - (void)cancelButtonTapped
 {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate debugMenuViewControllerDidFinish:self];
 }
 
 #pragma mark - Table view data source
@@ -99,7 +100,7 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
     
     if ([action shouldDismissDebugMenuAfterFinish])
     {
-        [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+        [self.delegate debugMenuViewControllerDidFinish:self];
     }
     else if ([action shouldReloadDebugMenuAfterFinish])
     {

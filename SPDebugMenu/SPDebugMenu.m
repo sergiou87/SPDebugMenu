@@ -14,7 +14,10 @@
 
 #pragma mark - SPDebugMenu class extension
 
-@interface SPDebugMenu () <SPDebugMenuTriggeringDelegate>
+@interface SPDebugMenu () <
+    SPDebugMenuTriggeringDelegate,
+    SPDebugMenuViewControllerDelegate
+>
 
 @property (nonatomic, weak) UIWindow *window;
 
@@ -77,6 +80,7 @@
 
     SPDebugMenuViewController *viewController = [[SPDebugMenuViewController alloc] initWithDebugMenuActions:self.actions
                                                                                                  screenshot:screenshot];
+    viewController.delegate = self;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
     [self.window.rootViewController presentViewController:navigationController
@@ -135,6 +139,13 @@
 - (void)debugMenuWasTriggered:(id<SPDebugMenuTriggering>)sender
 {
     [self showDebugMenu];
+}
+
+#pragma mark - SPDebugMenuViewControllerDelegate methods
+
+- (void)debugMenuViewControllerDidFinish:(SPDebugMenuViewController *)controller
+{
+    [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
