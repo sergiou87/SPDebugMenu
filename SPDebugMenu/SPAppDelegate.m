@@ -41,7 +41,7 @@
     // Configure the debug menu
     self.debugMenu = [[SPDebugMenu alloc] initWithWindow:self.window];
 
-    // Configure a shake trigger (requires a ShakeTriggerWindow
+    // Configure a shake trigger (requires a ShakeTriggerWindow)
     SPDebugMenuShakeTrigger *shakeTrigger = [[SPDebugMenuShakeTrigger alloc] init];
     shakeTriggerWindow.shakeTrigger = shakeTrigger;
     [self.debugMenu registerTrigger:shakeTrigger];
