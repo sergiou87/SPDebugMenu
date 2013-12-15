@@ -30,4 +30,14 @@
     return [status copy];
 }
 
+- (NSString *)subject
+{
+    return @"App user report";
+}
+
+- (NSArray *)defaultRecipients
+{
+    return @[@"someone@mycompany", @"bugs@mycompany.com"];
+}
+
 @end

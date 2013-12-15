@@ -254,9 +254,7 @@
 		401394DD182FA8C000CF45F6 /* Debug menu */ = {
 			isa = PBXGroup;
 			children = (
-				401DBB5B1837901800383BD4 /* Long press trigger */,
-				4046FD6D1837835F004F95C2 /* Tap trigger */,
-				40139541182FB3B400CF45F6 /* Shake trigger */,
+				4049F4B2185E5E2600B76B03 /* Triggers */,
 				4046FD6C1837833B004F95C2 /* Send report action */,
 				40070FF21838E6F400EF565C /* View controller */,
 				401394DE182FA8D600CF45F6 /* SPDebugMenu.h */,
@@ -304,6 +302,16 @@
 				4046FD6F18378376004F95C2 /* SPDebugMenuTapTrigger.m */,
 			);
 			name = "Tap trigger";
+			sourceTree = "<group>";
+		};
+		4049F4B2185E5E2600B76B03 /* Triggers */ = {
+			isa = PBXGroup;
+			children = (
+				401DBB5B1837901800383BD4 /* Long press trigger */,
+				4046FD6D1837835F004F95C2 /* Tap trigger */,
+				40139541182FB3B400CF45F6 /* Shake trigger */,
+			);
+			name = Triggers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

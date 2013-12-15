@@ -15,4 +15,10 @@
 /// App status string
 - (NSString *)currentStatus;
 
+/// Subject of the report to be sent
+- (NSString *)subject;
+
+// Default recipients of the report to be sent
+- (NSArray *)defaultRecipients;
+
 @end

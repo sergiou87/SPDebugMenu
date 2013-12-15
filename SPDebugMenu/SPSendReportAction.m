@@ -87,7 +87,9 @@
 {
     MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
     controller.mailComposeDelegate = self;
-    [controller setSubject:@"App user report"];
+    [controller setSubject:self.statusComposer.subject];
+    
+    [controller setToRecipients:self.statusComposer.defaultRecipients];
     
     NSData *screenshotData = UIImageJPEGRepresentation(self.screenshot, 0.9f);
     [controller addAttachmentData:screenshotData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
