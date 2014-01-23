@@ -37,16 +37,16 @@ static NSString *kDebugMenuCellIdentifier = @"kDebugMenuCellIdentifier";
     
     self.title = @"Debug menu";
     
-    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
-                                                                                  target:self
-                                                                                  action:@selector(cancelButtonTapped)];
-    [self.navigationItem setLeftBarButtonItem:cancelButton];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                target:self
+                                                                                action:@selector(doneButtonTapped)];
+    [self.navigationItem setRightBarButtonItem:doneButton];
     
     [self.tableView registerClass:[SPDebugMenuActionCell class]
            forCellReuseIdentifier:kDebugMenuCellIdentifier];
 }
 
-- (void)cancelButtonTapped
+- (void)doneButtonTapped
 {
     [self.delegate debugMenuViewControllerDidFinish:self];
 }

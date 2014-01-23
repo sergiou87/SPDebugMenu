@@ -20,9 +20,13 @@
 >
 
 @property (nonatomic, weak) UIWindow *window;
+@property (nonatomic, strong, readonly) UIViewController *topMostViewController;
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @property (nonatomic, strong) NSMutableArray *triggers;
 @property (nonatomic, strong) NSMutableArray *actions;
+
+@property (nonatomic, getter = isMenuVisible) BOOL menuVisible;
 
 @end
 
@@ -94,22 +98,40 @@
 {
     SPDebugMenuViewController *viewController = [[SPDebugMenuViewController alloc] initWithDebugMenuActions:self.actions];
     viewController.delegate = self;
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
-    [self.window.rootViewController presentViewController:navigationController
-                                                 animated:YES
-                                               completion:nil];
+    [self.topMostViewController presentViewController:self.navigationController
+                                             animated:YES
+                                           completion:nil];
 }
 
 - (void)dismissDebugMenu
 {
-    [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController.presentingViewController dismissViewControllerAnimated:YES
+                                                                           completion:^{
+                                                                               self.menuVisible = NO;
+                                                                           }];
+    self.navigationController = nil;
+}
+
+- (UIViewController *)topMostViewController
+{
+    UIViewController *topController = self.window.rootViewController;
+    
+    while (topController.presentedViewController) {
+        topController = topController.presentedViewController;
+    }
+    
+    return topController;
 }
 
 #pragma mark - SPDebugMenuTriggeringDelegate methods
 
 - (void)debugMenuWasTriggered:(id<SPDebugMenuTriggering>)sender
 {
+    if (self.menuVisible) return;
+    self.menuVisible = YES;
+
     [self prepareActions];
     [self showDebugMenu];
 }
