@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class SPExampleSettings;
+
 @interface SPViewController : UIViewController
+
+- (instancetype)initWithSettings:(SPExampleSettings *)settings;
 
 @end

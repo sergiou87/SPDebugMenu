@@ -10,6 +10,6 @@
 
 @interface SPExampleSettings : NSObject
 
-@property (nonatomic, assign) BOOL someSetting;
+@property (nonatomic, assign, getter = isMagicEnabled) BOOL magicEnabled;
 
 @end

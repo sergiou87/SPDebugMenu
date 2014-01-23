@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>06D08074-6DA1-4F34-9856-BB692BF9B28F</string>
+	<string>1EA86C77-7DB8-4467-A9AA-82D6F60BC33D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SPDebugMenu</string>
+	<string>SPDebugMenuExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>78637ADD-0EA9-4003-9E24-88056434EF2E</key>
+		<key>EC3C2E07-831B-4960-A80E-6CCE04F23E22</key>
 		<string>ssh://bitbucket.org/sergiou87/spdebugmenu.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SPDebugMenu.xcodeproj/project.xcworkspace</string>
+	<string>Example/SPDebugMenuExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>78637ADD-0EA9-4003-9E24-88056434EF2E</key>
-		<string>../..</string>
+		<key>EC3C2E07-831B-4960-A80E-6CCE04F23E22</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://bitbucket.org/sergiou87/spdebugmenu.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>78637ADD-0EA9-4003-9E24-88056434EF2E</string>
+	<string>EC3C2E07-831B-4960-A80E-6CCE04F23E22</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>78637ADD-0EA9-4003-9E24-88056434EF2E</string>
+			<string>EC3C2E07-831B-4960-A80E-6CCE04F23E22</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SPDebugMenu</string>
+			<string>spdebugmenu</string>
 		</dict>
 	</array>
 </dict>

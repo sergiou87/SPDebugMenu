@@ -22,7 +22,7 @@
 {
     [super viewWillAppear:animated];
     
-    self.settingSwitch.on = self.settings.someSetting;
+    self.settingSwitch.on = self.settings.magicEnabled;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -34,7 +34,7 @@
 
 - (IBAction)settingSwitchChanged:(id)sender
 {
-    self.settings.someSetting = self.settingSwitch.on;
+    self.settings.magicEnabled = self.settingSwitch.on;
 }
 
 @end

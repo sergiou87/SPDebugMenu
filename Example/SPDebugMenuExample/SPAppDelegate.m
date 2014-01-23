@@ -35,7 +35,7 @@
     SPShakeTriggerWindow *shakeTriggerWindow = [[SPShakeTriggerWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = shakeTriggerWindow;
     
-    SPViewController *viewController = [[SPViewController alloc] init];
+    SPViewController *viewController = [[SPViewController alloc] initWithSettings:settings];
     self.window.rootViewController = viewController;
     
     // Configure the debug menu

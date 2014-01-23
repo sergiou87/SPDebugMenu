@@ -16,12 +16,12 @@
 
 - (NSString *)title
 {
-    return [NSString stringWithFormat:@"Change setting (current value: %@)", self.settings.someSetting ? @"YES" : @"NO"];
+    return [NSString stringWithFormat:@"Toggle magic (enabled: %@)", self.settings.magicEnabled ? @"YES" : @"NO"];
 }
 
 - (NSString *)detailedDescription
 {
-    return @"Toggle setting value";
+    return @"Toggle magic from here";
 }
 
 - (void)prepare
@@ -33,7 +33,7 @@
 {
     [self.delegate debugMenuActionDidStart:self];
     
-    self.settings.someSetting = !self.settings.someSetting;
+    self.settings.magicEnabled = !self.settings.magicEnabled;
     
     [self.delegate debugMenuActionDidEnd:self];
 }

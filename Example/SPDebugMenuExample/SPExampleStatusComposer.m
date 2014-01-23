@@ -24,7 +24,7 @@
     
     // App info
     [status appendFormat:@"APP STATUS\n"];
-    [status appendFormat:@"Setting enabled: %@\n", self.settings.someSetting ? @"YES" : @"NO"];
+    [status appendFormat:@"Magic enabled: %@\n", self.settings.magicEnabled ? @"YES" : @"NO"];
     [status appendFormat:@"\n"];
     
     return [status copy];
@@ -37,7 +37,7 @@
 
 - (NSArray *)defaultRecipients
 {
-    return @[@"someone@mycompany", @"bugs@mycompany.com"];
+    return @[@"someone@mycompany.com", @"bugs@mycompany.com"];
 }
 
 @end

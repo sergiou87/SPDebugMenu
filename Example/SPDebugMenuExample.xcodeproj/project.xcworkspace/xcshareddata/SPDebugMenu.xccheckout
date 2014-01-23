@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>06D08074-6DA1-4F34-9856-BB692BF9B28F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SPDebugMenu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>78637ADD-0EA9-4003-9E24-88056434EF2E</key>
+		<string>ssh://bitbucket.org/sergiou87/spdebugmenu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SPDebugMenuExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>78637ADD-0EA9-4003-9E24-88056434EF2E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/sergiou87/spdebugmenu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>78637ADD-0EA9-4003-9E24-88056434EF2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>78637ADD-0EA9-4003-9E24-88056434EF2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SPDebugMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>

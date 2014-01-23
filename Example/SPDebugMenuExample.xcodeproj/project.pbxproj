@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		40070FEC1838D97A00EF565C /* SPImmediateChangeSettingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */; };
 		40070FF01838E60100EF565C /* SPViewBasedChangeSettingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */; };
-		40070FF51838E74600EF565C /* SPDebugMenuActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */; };
 		40070FF91838EBD800EF565C /* SPChangeSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */; };
 		40070FFA1838EBD800EF565C /* SPChangeSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */; };
 		400DC8521837A73A005EE481 /* SPExampleStatusComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 400DC8511837A73A005EE481 /* SPExampleStatusComposer.m */; };
@@ -21,39 +20,23 @@
 		401394B2182FA6BB00CF45F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 401394B1182FA6BB00CF45F6 /* main.m */; };
 		401394B6182FA6BB00CF45F6 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 401394B5182FA6BB00CF45F6 /* SPAppDelegate.m */; };
 		401394C1182FA6BB00CF45F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401394C0182FA6BB00CF45F6 /* Images.xcassets */; };
-		401394C8182FA6BB00CF45F6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394C7182FA6BB00CF45F6 /* XCTest.framework */; };
-		401394C9182FA6BB00CF45F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394A5182FA6BB00CF45F6 /* Foundation.framework */; };
-		401394CA182FA6BB00CF45F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401394A9182FA6BB00CF45F6 /* UIKit.framework */; };
-		401394D2182FA6BB00CF45F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 401394D0182FA6BB00CF45F6 /* InfoPlist.strings */; };
-		401394D4182FA6BB00CF45F6 /* SPDebugMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 401394D3182FA6BB00CF45F6 /* SPDebugMenuTests.m */; };
-		401394E0182FA8D600CF45F6 /* SPDebugMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 401394DF182FA8D600CF45F6 /* SPDebugMenu.m */; };
-		401394E4182FAAC900CF45F6 /* SPDebugMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401394E3182FAAC900CF45F6 /* SPDebugMenuViewController.m */; };
-		401394E7182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 401394E6182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.m */; };
 		4013953C182FB14A00CF45F6 /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013953A182FB14A00CF45F6 /* SPViewController.m */; };
 		4013953D182FB14A00CF45F6 /* SPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4013953B182FB14A00CF45F6 /* SPViewController.xib */; };
-		40139540182FB2BC00CF45F6 /* SPShakeTriggerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013953F182FB2BC00CF45F6 /* SPShakeTriggerWindow.m */; };
-		40139545182FB82300CF45F6 /* SPSendReportAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40139544182FB82300CF45F6 /* SPSendReportAction.m */; };
-		401DBB5E1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 401DBB5D1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m */; };
-		4046FD7018378376004F95C2 /* SPDebugMenuTapTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4046FD6F18378376004F95C2 /* SPDebugMenuTapTrigger.m */; };
+		49672EF71891CEFE00220147 /* SPDebugMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EDE1891CEFE00220147 /* SPDebugMenu.m */; };
+		49672EF81891CEFE00220147 /* SPDebugMenuActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EE11891CEFE00220147 /* SPDebugMenuActionCell.m */; };
+		49672EF91891CEFE00220147 /* SPDebugMenuLongPressTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EE31891CEFE00220147 /* SPDebugMenuLongPressTrigger.m */; };
+		49672EFA1891CEFE00220147 /* SPDebugMenuShakeTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EE51891CEFE00220147 /* SPDebugMenuShakeTrigger.m */; };
+		49672EFB1891CEFE00220147 /* SPDebugMenuTapTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EE71891CEFE00220147 /* SPDebugMenuTapTrigger.m */; };
+		49672EFC1891CEFE00220147 /* SPDebugMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EEA1891CEFE00220147 /* SPDebugMenuViewController.m */; };
+		49672EFE1891CEFE00220147 /* SPSendReportAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EEE1891CEFE00220147 /* SPSendReportAction.m */; };
+		49672EFF1891CEFE00220147 /* SPShakeTriggerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EF11891CEFE00220147 /* SPShakeTriggerWindow.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		401394CB182FA6BB00CF45F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4013949A182FA6BB00CF45F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 401394A1182FA6BB00CF45F6;
-			remoteInfo = SPDebugMenu;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		40070FEA1838D97A00EF565C /* SPImmediateChangeSettingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPImmediateChangeSettingAction.h; sourceTree = "<group>"; };
 		40070FEB1838D97A00EF565C /* SPImmediateChangeSettingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPImmediateChangeSettingAction.m; sourceTree = "<group>"; };
 		40070FEE1838E60100EF565C /* SPViewBasedChangeSettingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPViewBasedChangeSettingAction.h; sourceTree = "<group>"; };
 		40070FEF1838E60100EF565C /* SPViewBasedChangeSettingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewBasedChangeSettingAction.m; sourceTree = "<group>"; };
-		40070FF31838E74600EF565C /* SPDebugMenuActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuActionCell.h; sourceTree = "<group>"; };
-		40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuActionCell.m; sourceTree = "<group>"; };
 		40070FF61838EBD800EF565C /* SPChangeSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChangeSettingViewController.h; sourceTree = "<group>"; };
 		40070FF71838EBD800EF565C /* SPChangeSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChangeSettingViewController.m; sourceTree = "<group>"; };
 		40070FF81838EBD800EF565C /* SPChangeSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPChangeSettingViewController.xib; sourceTree = "<group>"; };
@@ -61,42 +44,40 @@
 		400DC8511837A73A005EE481 /* SPExampleStatusComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleStatusComposer.m; sourceTree = "<group>"; };
 		400DC8531837A823005EE481 /* SPExampleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExampleSettings.h; sourceTree = "<group>"; };
 		400DC8541837A823005EE481 /* SPExampleSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPExampleSettings.m; sourceTree = "<group>"; };
-		401394A2182FA6BB00CF45F6 /* SPDebugMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPDebugMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		401394A2182FA6BB00CF45F6 /* SPDebugMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPDebugMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		401394A5182FA6BB00CF45F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		401394A7182FA6BB00CF45F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		401394A9182FA6BB00CF45F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		401394AD182FA6BB00CF45F6 /* SPDebugMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPDebugMenu-Info.plist"; sourceTree = "<group>"; };
+		401394AD182FA6BB00CF45F6 /* SPDebugMenuExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPDebugMenuExample-Info.plist"; sourceTree = "<group>"; };
 		401394AF182FA6BB00CF45F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		401394B1182FA6BB00CF45F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		401394B3182FA6BB00CF45F6 /* SPDebugMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPDebugMenu-Prefix.pch"; sourceTree = "<group>"; };
+		401394B3182FA6BB00CF45F6 /* SPDebugMenuExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPDebugMenuExample-Prefix.pch"; sourceTree = "<group>"; };
 		401394B4182FA6BB00CF45F6 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		401394B5182FA6BB00CF45F6 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
 		401394C0182FA6BB00CF45F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		401394C6182FA6BB00CF45F6 /* SPDebugMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPDebugMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		401394C7182FA6BB00CF45F6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		401394CF182FA6BB00CF45F6 /* SPDebugMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPDebugMenuTests-Info.plist"; sourceTree = "<group>"; };
-		401394D1182FA6BB00CF45F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		401394D3182FA6BB00CF45F6 /* SPDebugMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuTests.m; sourceTree = "<group>"; };
-		401394DE182FA8D600CF45F6 /* SPDebugMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenu.h; sourceTree = "<group>"; };
-		401394DF182FA8D600CF45F6 /* SPDebugMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenu.m; sourceTree = "<group>"; };
-		401394E1182FA8E900CF45F6 /* SPDebugMenuTriggering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuTriggering.h; sourceTree = "<group>"; };
-		401394E2182FAAC900CF45F6 /* SPDebugMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuViewController.h; sourceTree = "<group>"; };
-		401394E3182FAAC900CF45F6 /* SPDebugMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuViewController.m; sourceTree = "<group>"; };
-		401394E5182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuShakeTrigger.h; sourceTree = "<group>"; };
-		401394E6182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuShakeTrigger.m; sourceTree = "<group>"; };
 		40139539182FB14A00CF45F6 /* SPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
 		4013953A182FB14A00CF45F6 /* SPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		4013953B182FB14A00CF45F6 /* SPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPViewController.xib; sourceTree = "<group>"; };
-		4013953E182FB2BC00CF45F6 /* SPShakeTriggerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPShakeTriggerWindow.h; sourceTree = "<group>"; };
-		4013953F182FB2BC00CF45F6 /* SPShakeTriggerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPShakeTriggerWindow.m; sourceTree = "<group>"; };
-		40139542182FB40100CF45F6 /* SPDebugMenuAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuAction.h; sourceTree = "<group>"; };
-		40139543182FB82300CF45F6 /* SPSendReportAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSendReportAction.h; sourceTree = "<group>"; };
-		40139544182FB82300CF45F6 /* SPSendReportAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSendReportAction.m; sourceTree = "<group>"; };
-		401DBB5C1837902F00383BD4 /* SPDebugMenuLongPressTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuLongPressTrigger.h; sourceTree = "<group>"; };
-		401DBB5D1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuLongPressTrigger.m; sourceTree = "<group>"; };
-		4046FD6B183780CC004F95C2 /* SPSendReportStatusComposing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSendReportStatusComposing.h; sourceTree = "<group>"; };
-		4046FD6E18378376004F95C2 /* SPDebugMenuTapTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuTapTrigger.h; sourceTree = "<group>"; };
-		4046FD6F18378376004F95C2 /* SPDebugMenuTapTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuTapTrigger.m; sourceTree = "<group>"; };
+		49672EDD1891CEFE00220147 /* SPDebugMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenu.h; sourceTree = "<group>"; };
+		49672EDE1891CEFE00220147 /* SPDebugMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenu.m; sourceTree = "<group>"; };
+		49672EDF1891CEFE00220147 /* SPDebugMenuAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuAction.h; sourceTree = "<group>"; };
+		49672EE01891CEFE00220147 /* SPDebugMenuActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuActionCell.h; sourceTree = "<group>"; };
+		49672EE11891CEFE00220147 /* SPDebugMenuActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuActionCell.m; sourceTree = "<group>"; };
+		49672EE21891CEFE00220147 /* SPDebugMenuLongPressTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuLongPressTrigger.h; sourceTree = "<group>"; };
+		49672EE31891CEFE00220147 /* SPDebugMenuLongPressTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuLongPressTrigger.m; sourceTree = "<group>"; };
+		49672EE41891CEFE00220147 /* SPDebugMenuShakeTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuShakeTrigger.h; sourceTree = "<group>"; };
+		49672EE51891CEFE00220147 /* SPDebugMenuShakeTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuShakeTrigger.m; sourceTree = "<group>"; };
+		49672EE61891CEFE00220147 /* SPDebugMenuTapTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuTapTrigger.h; sourceTree = "<group>"; };
+		49672EE71891CEFE00220147 /* SPDebugMenuTapTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuTapTrigger.m; sourceTree = "<group>"; };
+		49672EE81891CEFE00220147 /* SPDebugMenuTriggering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuTriggering.h; sourceTree = "<group>"; };
+		49672EE91891CEFE00220147 /* SPDebugMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuViewController.h; sourceTree = "<group>"; };
+		49672EEA1891CEFE00220147 /* SPDebugMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenuViewController.m; sourceTree = "<group>"; };
+		49672EED1891CEFE00220147 /* SPSendReportAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSendReportAction.h; sourceTree = "<group>"; };
+		49672EEE1891CEFE00220147 /* SPSendReportAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSendReportAction.m; sourceTree = "<group>"; };
+		49672EEF1891CEFE00220147 /* SPSendReportStatusComposing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSendReportStatusComposing.h; sourceTree = "<group>"; };
+		49672EF01891CEFE00220147 /* SPShakeTriggerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPShakeTriggerWindow.h; sourceTree = "<group>"; };
+		49672EF11891CEFE00220147 /* SPShakeTriggerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPShakeTriggerWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +88,6 @@
 				401394A8182FA6BB00CF45F6 /* CoreGraphics.framework in Frameworks */,
 				401394AA182FA6BB00CF45F6 /* UIKit.framework in Frameworks */,
 				401394A6182FA6BB00CF45F6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		401394C3182FA6BB00CF45F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				401394C8182FA6BB00CF45F6 /* XCTest.framework in Frameworks */,
-				401394CA182FA6BB00CF45F6 /* UIKit.framework in Frameworks */,
-				401394C9182FA6BB00CF45F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,22 +136,11 @@
 			name = "View-based change setting";
 			sourceTree = "<group>";
 		};
-		40070FF21838E6F400EF565C /* View controller */ = {
-			isa = PBXGroup;
-			children = (
-				401394E2182FAAC900CF45F6 /* SPDebugMenuViewController.h */,
-				401394E3182FAAC900CF45F6 /* SPDebugMenuViewController.m */,
-				40070FF31838E74600EF565C /* SPDebugMenuActionCell.h */,
-				40070FF41838E74600EF565C /* SPDebugMenuActionCell.m */,
-			);
-			name = "View controller";
-			sourceTree = "<group>";
-		};
 		40139499182FA6BB00CF45F6 = {
 			isa = PBXGroup;
 			children = (
-				401394AB182FA6BB00CF45F6 /* SPDebugMenu */,
-				401394CD182FA6BB00CF45F6 /* SPDebugMenuTests */,
+				401394AB182FA6BB00CF45F6 /* SPDebugMenuExample */,
+				49672EDC1891CEFE00220147 /* SPDebugMenu */,
 				401394A4182FA6BB00CF45F6 /* Frameworks */,
 				401394A3182FA6BB00CF45F6 /* Products */,
 			);
@@ -189,8 +149,7 @@
 		401394A3182FA6BB00CF45F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				401394A2182FA6BB00CF45F6 /* SPDebugMenu.app */,
-				401394C6182FA6BB00CF45F6 /* SPDebugMenuTests.xctest */,
+				401394A2182FA6BB00CF45F6 /* SPDebugMenuExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,120 +165,81 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		401394AB182FA6BB00CF45F6 /* SPDebugMenu */ = {
+		401394AB182FA6BB00CF45F6 /* SPDebugMenuExample */ = {
 			isa = PBXGroup;
 			children = (
-				401394DD182FA8C000CF45F6 /* Debug menu */,
+				401394AC182FA6BB00CF45F6 /* Supporting Files */,
+				40070FE81838D6D000EF565C /* Example actions */,
 				401394B4182FA6BB00CF45F6 /* SPAppDelegate.h */,
 				401394B5182FA6BB00CF45F6 /* SPAppDelegate.m */,
-				401394C0182FA6BB00CF45F6 /* Images.xcassets */,
-				401394AC182FA6BB00CF45F6 /* Supporting Files */,
 				40139539182FB14A00CF45F6 /* SPViewController.h */,
 				4013953A182FB14A00CF45F6 /* SPViewController.m */,
 				4013953B182FB14A00CF45F6 /* SPViewController.xib */,
-				40070FE81838D6D000EF565C /* Example actions */,
 			);
-			path = SPDebugMenu;
+			path = SPDebugMenuExample;
 			sourceTree = "<group>";
 		};
 		401394AC182FA6BB00CF45F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				401394AD182FA6BB00CF45F6 /* SPDebugMenu-Info.plist */,
+				401394C0182FA6BB00CF45F6 /* Images.xcassets */,
+				401394AD182FA6BB00CF45F6 /* SPDebugMenuExample-Info.plist */,
 				401394AE182FA6BB00CF45F6 /* InfoPlist.strings */,
 				401394B1182FA6BB00CF45F6 /* main.m */,
-				401394B3182FA6BB00CF45F6 /* SPDebugMenu-Prefix.pch */,
+				401394B3182FA6BB00CF45F6 /* SPDebugMenuExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		401394CD182FA6BB00CF45F6 /* SPDebugMenuTests */ = {
+		49672EDC1891CEFE00220147 /* SPDebugMenu */ = {
 			isa = PBXGroup;
 			children = (
-				401394D3182FA6BB00CF45F6 /* SPDebugMenuTests.m */,
-				401394CE182FA6BB00CF45F6 /* Supporting Files */,
+				49672F031891CFA900220147 /* Triggers */,
+				49672F041891CFB700220147 /* View controller */,
+				49672EDD1891CEFE00220147 /* SPDebugMenu.h */,
+				49672EDE1891CEFE00220147 /* SPDebugMenu.m */,
+				49672EDF1891CEFE00220147 /* SPDebugMenuAction.h */,
+				49672EE81891CEFE00220147 /* SPDebugMenuTriggering.h */,
+				49672EED1891CEFE00220147 /* SPSendReportAction.h */,
+				49672EEE1891CEFE00220147 /* SPSendReportAction.m */,
+				49672EEF1891CEFE00220147 /* SPSendReportStatusComposing.h */,
 			);
-			path = SPDebugMenuTests;
+			name = SPDebugMenu;
+			path = ../SPDebugMenu;
 			sourceTree = "<group>";
 		};
-		401394CE182FA6BB00CF45F6 /* Supporting Files */ = {
+		49672F031891CFA900220147 /* Triggers */ = {
 			isa = PBXGroup;
 			children = (
-				401394CF182FA6BB00CF45F6 /* SPDebugMenuTests-Info.plist */,
-				401394D0182FA6BB00CF45F6 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		401394DD182FA8C000CF45F6 /* Debug menu */ = {
-			isa = PBXGroup;
-			children = (
-				4049F4B2185E5E2600B76B03 /* Triggers */,
-				4046FD6C1837833B004F95C2 /* Send report action */,
-				40070FF21838E6F400EF565C /* View controller */,
-				401394DE182FA8D600CF45F6 /* SPDebugMenu.h */,
-				401394DF182FA8D600CF45F6 /* SPDebugMenu.m */,
-				401394E1182FA8E900CF45F6 /* SPDebugMenuTriggering.h */,
-				40139542182FB40100CF45F6 /* SPDebugMenuAction.h */,
-			);
-			name = "Debug menu";
-			sourceTree = "<group>";
-		};
-		40139541182FB3B400CF45F6 /* Shake trigger */ = {
-			isa = PBXGroup;
-			children = (
-				401394E5182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.h */,
-				401394E6182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.m */,
-				4013953E182FB2BC00CF45F6 /* SPShakeTriggerWindow.h */,
-				4013953F182FB2BC00CF45F6 /* SPShakeTriggerWindow.m */,
-			);
-			name = "Shake trigger";
-			sourceTree = "<group>";
-		};
-		401DBB5B1837901800383BD4 /* Long press trigger */ = {
-			isa = PBXGroup;
-			children = (
-				401DBB5C1837902F00383BD4 /* SPDebugMenuLongPressTrigger.h */,
-				401DBB5D1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m */,
-			);
-			name = "Long press trigger";
-			sourceTree = "<group>";
-		};
-		4046FD6C1837833B004F95C2 /* Send report action */ = {
-			isa = PBXGroup;
-			children = (
-				40139543182FB82300CF45F6 /* SPSendReportAction.h */,
-				40139544182FB82300CF45F6 /* SPSendReportAction.m */,
-				4046FD6B183780CC004F95C2 /* SPSendReportStatusComposing.h */,
-			);
-			name = "Send report action";
-			sourceTree = "<group>";
-		};
-		4046FD6D1837835F004F95C2 /* Tap trigger */ = {
-			isa = PBXGroup;
-			children = (
-				4046FD6E18378376004F95C2 /* SPDebugMenuTapTrigger.h */,
-				4046FD6F18378376004F95C2 /* SPDebugMenuTapTrigger.m */,
-			);
-			name = "Tap trigger";
-			sourceTree = "<group>";
-		};
-		4049F4B2185E5E2600B76B03 /* Triggers */ = {
-			isa = PBXGroup;
-			children = (
-				401DBB5B1837901800383BD4 /* Long press trigger */,
-				4046FD6D1837835F004F95C2 /* Tap trigger */,
-				40139541182FB3B400CF45F6 /* Shake trigger */,
+				49672EF01891CEFE00220147 /* SPShakeTriggerWindow.h */,
+				49672EF11891CEFE00220147 /* SPShakeTriggerWindow.m */,
+				49672EE21891CEFE00220147 /* SPDebugMenuLongPressTrigger.h */,
+				49672EE31891CEFE00220147 /* SPDebugMenuLongPressTrigger.m */,
+				49672EE41891CEFE00220147 /* SPDebugMenuShakeTrigger.h */,
+				49672EE51891CEFE00220147 /* SPDebugMenuShakeTrigger.m */,
+				49672EE61891CEFE00220147 /* SPDebugMenuTapTrigger.h */,
+				49672EE71891CEFE00220147 /* SPDebugMenuTapTrigger.m */,
 			);
 			name = Triggers;
+			sourceTree = "<group>";
+		};
+		49672F041891CFB700220147 /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				49672EE01891CEFE00220147 /* SPDebugMenuActionCell.h */,
+				49672EE11891CEFE00220147 /* SPDebugMenuActionCell.m */,
+				49672EE91891CEFE00220147 /* SPDebugMenuViewController.h */,
+				49672EEA1891CEFE00220147 /* SPDebugMenuViewController.m */,
+			);
+			name = "View controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		401394A1182FA6BB00CF45F6 /* SPDebugMenu */ = {
+		401394A1182FA6BB00CF45F6 /* SPDebugMenuExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 401394D7182FA6BC00CF45F6 /* Build configuration list for PBXNativeTarget "SPDebugMenu" */;
+			buildConfigurationList = 401394D7182FA6BC00CF45F6 /* Build configuration list for PBXNativeTarget "SPDebugMenuExample" */;
 			buildPhases = (
 				4013949E182FA6BB00CF45F6 /* Sources */,
 				4013949F182FA6BB00CF45F6 /* Frameworks */,
@@ -329,28 +249,10 @@
 			);
 			dependencies = (
 			);
-			name = SPDebugMenu;
-			productName = SPDebugMenu;
-			productReference = 401394A2182FA6BB00CF45F6 /* SPDebugMenu.app */;
+			name = SPDebugMenuExample;
+			productName = SPDebugMenuExample;
+			productReference = 401394A2182FA6BB00CF45F6 /* SPDebugMenuExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		401394C5182FA6BB00CF45F6 /* SPDebugMenuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 401394DA182FA6BC00CF45F6 /* Build configuration list for PBXNativeTarget "SPDebugMenuTests" */;
-			buildPhases = (
-				401394C2182FA6BB00CF45F6 /* Sources */,
-				401394C3182FA6BB00CF45F6 /* Frameworks */,
-				401394C4182FA6BB00CF45F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				401394CC182FA6BB00CF45F6 /* PBXTargetDependency */,
-			);
-			name = SPDebugMenuTests;
-			productName = SPDebugMenuTests;
-			productReference = 401394C6182FA6BB00CF45F6 /* SPDebugMenuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -361,13 +263,8 @@
 				CLASSPREFIX = SP;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sergio Padrino";
-				TargetAttributes = {
-					401394C5182FA6BB00CF45F6 = {
-						TestTargetID = 401394A1182FA6BB00CF45F6;
-					};
-				};
 			};
-			buildConfigurationList = 4013949D182FA6BB00CF45F6 /* Build configuration list for PBXProject "SPDebugMenu" */;
+			buildConfigurationList = 4013949D182FA6BB00CF45F6 /* Build configuration list for PBXProject "SPDebugMenuExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -380,8 +277,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				401394A1182FA6BB00CF45F6 /* SPDebugMenu */,
-				401394C5182FA6BB00CF45F6 /* SPDebugMenuTests */,
+				401394A1182FA6BB00CF45F6 /* SPDebugMenuExample */,
 			);
 		};
 /* End PBXProject section */
@@ -398,14 +294,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		401394C4182FA6BB00CF45F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				401394D2182FA6BB00CF45F6 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,56 +301,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49672EF91891CEFE00220147 /* SPDebugMenuLongPressTrigger.m in Sources */,
 				40070FF91838EBD800EF565C /* SPChangeSettingViewController.m in Sources */,
 				401394B2182FA6BB00CF45F6 /* main.m in Sources */,
+				49672EFA1891CEFE00220147 /* SPDebugMenuShakeTrigger.m in Sources */,
+				49672EFB1891CEFE00220147 /* SPDebugMenuTapTrigger.m in Sources */,
 				401394B6182FA6BB00CF45F6 /* SPAppDelegate.m in Sources */,
+				49672EFE1891CEFE00220147 /* SPSendReportAction.m in Sources */,
+				49672EFC1891CEFE00220147 /* SPDebugMenuViewController.m in Sources */,
+				49672EF81891CEFE00220147 /* SPDebugMenuActionCell.m in Sources */,
 				400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */,
-				40070FF51838E74600EF565C /* SPDebugMenuActionCell.m in Sources */,
+				49672EFF1891CEFE00220147 /* SPShakeTriggerWindow.m in Sources */,
+				49672EF71891CEFE00220147 /* SPDebugMenu.m in Sources */,
 				40070FEC1838D97A00EF565C /* SPImmediateChangeSettingAction.m in Sources */,
-				401394E7182FAB8200CF45F6 /* SPDebugMenuShakeTrigger.m in Sources */,
 				4013953C182FB14A00CF45F6 /* SPViewController.m in Sources */,
-				401394E0182FA8D600CF45F6 /* SPDebugMenu.m in Sources */,
-				401394E4182FAAC900CF45F6 /* SPDebugMenuViewController.m in Sources */,
 				40070FF01838E60100EF565C /* SPViewBasedChangeSettingAction.m in Sources */,
-				401DBB5E1837902F00383BD4 /* SPDebugMenuLongPressTrigger.m in Sources */,
-				40139545182FB82300CF45F6 /* SPSendReportAction.m in Sources */,
-				4046FD7018378376004F95C2 /* SPDebugMenuTapTrigger.m in Sources */,
 				400DC8521837A73A005EE481 /* SPExampleStatusComposer.m in Sources */,
-				40139540182FB2BC00CF45F6 /* SPShakeTriggerWindow.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		401394C2182FA6BB00CF45F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				401394D4182FA6BB00CF45F6 /* SPDebugMenuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		401394CC182FA6BB00CF45F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 401394A1182FA6BB00CF45F6 /* SPDebugMenu */;
-			targetProxy = 401394CB182FA6BB00CF45F6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		401394AE182FA6BB00CF45F6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				401394AF182FA6BB00CF45F6 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		401394D0182FA6BB00CF45F6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				401394D1182FA6BB00CF45F6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -550,8 +414,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SPDebugMenu/SPDebugMenu-Prefix.pch";
-				INFOPLIST_FILE = "SPDebugMenu/SPDebugMenu-Info.plist";
+				GCC_PREFIX_HEADER = "SPDebugMenuExample/SPDebugMenuExample-Prefix.pch";
+				INFOPLIST_FILE = "SPDebugMenuExample/SPDebugMenuExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -565,8 +429,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SPDebugMenu/SPDebugMenu-Prefix.pch";
-				INFOPLIST_FILE = "SPDebugMenu/SPDebugMenu-Info.plist";
+				GCC_PREFIX_HEADER = "SPDebugMenuExample/SPDebugMenuExample-Prefix.pch";
+				INFOPLIST_FILE = "SPDebugMenuExample/SPDebugMenuExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -574,52 +438,10 @@
 			};
 			name = Release;
 		};
-		401394DB182FA6BC00CF45F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SPDebugMenu.app/SPDebugMenu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SPDebugMenu/SPDebugMenu-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SPDebugMenuTests/SPDebugMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		401394DC182FA6BC00CF45F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SPDebugMenu.app/SPDebugMenu";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SPDebugMenu/SPDebugMenu-Prefix.pch";
-				INFOPLIST_FILE = "SPDebugMenuTests/SPDebugMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4013949D182FA6BB00CF45F6 /* Build configuration list for PBXProject "SPDebugMenu" */ = {
+		4013949D182FA6BB00CF45F6 /* Build configuration list for PBXProject "SPDebugMenuExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				401394D5182FA6BB00CF45F6 /* Debug */,
@@ -628,20 +450,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		401394D7182FA6BC00CF45F6 /* Build configuration list for PBXNativeTarget "SPDebugMenu" */ = {
+		401394D7182FA6BC00CF45F6 /* Build configuration list for PBXNativeTarget "SPDebugMenuExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				401394D8182FA6BC00CF45F6 /* Debug */,
 				401394D9182FA6BC00CF45F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		401394DA182FA6BC00CF45F6 /* Build configuration list for PBXNativeTarget "SPDebugMenuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				401394DB182FA6BC00CF45F6 /* Debug */,
-				401394DC182FA6BC00CF45F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

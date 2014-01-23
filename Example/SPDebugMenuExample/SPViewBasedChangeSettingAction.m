@@ -25,7 +25,7 @@
 
 - (NSString *)detailedDescription
 {
-    return @"Pushes a view controller where you can change the settings.";
+    return @"Enable the magic from another view controller";
 }
 
 - (void)prepare
