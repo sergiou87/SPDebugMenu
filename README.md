@@ -2,7 +2,7 @@
 
 SPDebugMenu is a library for iOS developers to show fully customizable debug menus in their apps.
 
-It supports: 
+It supports:
 
 * Different ways to trigger it: shaking the device, multiple taps or long press on the screen.
 * Customized debug actions.
@@ -16,24 +16,24 @@ It supports:
 
   ```
   platform :ios, "6.0"
-  pod 'SPDebugMenu' 
+  pod 'SPDebugMenu'
   ```
 
   Run the following command:
-  
+
   ```
   pod install
   ```
 
 2. **Static Library**
 
-    Clone the project or add it as a submodule. Drag *SPDebugMenu.xcodeproj* to your project, add it as a target dependency and link *libSPDebugMenu.a*. 
+    Clone the project or add it as a submodule. Drag *SPDebugMenu.xcodeproj* to your project, add it as a target dependency and link *libSPDebugMenu.a*.
     Then, you can simply do:
-    
+
     ```
     #import <SPDebugMenu/SPDebugMenu.h>
     ```
-	
+
 3. **Manually**
 
   Clone the project or add it as a submodule. Drag the whole SPDebugMenu folder to your project.
@@ -136,7 +136,7 @@ You can still use SPDebugMenu in your non-arc project. Just set ```-fobjc-arc```
 
 ## Example
 
-Aside from the code included in this README, you can see a full example with several triggers and actions in [SPDebugMenuExample](TBD).
+Aside from the code included in this README, you can see a full example with several triggers and actions in [SPDebugMenuExample](https://github.com/sergiou87/SPDebugMenu/blob/master/Example).
 
 ## Contact
 
@@ -153,4 +153,4 @@ If you want to contribute to the project just follow this steps:
 
 ## License
 
-SPDebugMenu is available under the MIT license. See the [LICENSE file](https://github.com/sergiou87/SPDebugMenu/blob/master/LICENSE) for more info.
+SPDebugMenu is available under the MIT license. See the [LICENSE file](LICENSE) for more info.
