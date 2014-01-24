@@ -1,6 +1,6 @@
 ## SPDebugMenu
 
-SPDebugMenu is a library for iOS developers to show fully customizable debug menus in their apps.
+SPDebugMenu is a library for iOS developers to show debug menus in their apps with fully customizable actions.
 
 It supports:
 
@@ -153,4 +153,4 @@ If you want to contribute to the project just follow this steps:
 
 ## License
 
-SPDebugMenu is available under the MIT license. See the [LICENSE file](LICENSE) for more info.
+SPDebugMenu is available under the MIT license. See the [LICENSE file](https://github.com/sergiou87/SPDebugMenu/blob/master/LICENSE) for more info.
