@@ -31,6 +31,7 @@
 @interface SPSendReportAction () <MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, strong) UIImage *screenshot;
+@property (nonatomic, copy) NSString *status;
 
 @end
 
@@ -51,6 +52,7 @@
 - (void)prepare
 {
     self.screenshot = [self takeScreenshot];
+    self.status = self.statusComposer.currentStatus;
 }
 
 - (UIImage*)takeScreenshot
@@ -110,7 +112,7 @@
     NSData *screenshotData = UIImageJPEGRepresentation(self.screenshot, 0.9f);
     [controller addAttachmentData:screenshotData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
     
-    [controller setMessageBody:self.statusComposer.currentStatus isHTML:NO];
+    [controller setMessageBody:self.status isHTML:NO];
     if (controller)
     {
         [navigationController presentViewController:controller
