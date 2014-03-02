@@ -22,6 +22,7 @@
 		401394C1182FA6BB00CF45F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401394C0182FA6BB00CF45F6 /* Images.xcassets */; };
 		4013953C182FB14A00CF45F6 /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013953A182FB14A00CF45F6 /* SPViewController.m */; };
 		4013953D182FB14A00CF45F6 /* SPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4013953B182FB14A00CF45F6 /* SPViewController.xib */; };
+		40DD545418C3E359007D3163 /* SPSimulateMemoryWarningAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DD545318C3E359007D3163 /* SPSimulateMemoryWarningAction.m */; };
 		49672EF71891CEFE00220147 /* SPDebugMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EDE1891CEFE00220147 /* SPDebugMenu.m */; };
 		49672EF81891CEFE00220147 /* SPDebugMenuActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EE11891CEFE00220147 /* SPDebugMenuActionCell.m */; };
 		49672EF91891CEFE00220147 /* SPDebugMenuLongPressTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 49672EE31891CEFE00220147 /* SPDebugMenuLongPressTrigger.m */; };
@@ -59,6 +60,8 @@
 		40139539182FB14A00CF45F6 /* SPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
 		4013953A182FB14A00CF45F6 /* SPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		4013953B182FB14A00CF45F6 /* SPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPViewController.xib; sourceTree = "<group>"; };
+		40DD545218C3E359007D3163 /* SPSimulateMemoryWarningAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSimulateMemoryWarningAction.h; sourceTree = "<group>"; };
+		40DD545318C3E359007D3163 /* SPSimulateMemoryWarningAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSimulateMemoryWarningAction.m; sourceTree = "<group>"; };
 		49672EDD1891CEFE00220147 /* SPDebugMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenu.h; sourceTree = "<group>"; };
 		49672EDE1891CEFE00220147 /* SPDebugMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDebugMenu.m; sourceTree = "<group>"; };
 		49672EDF1891CEFE00220147 /* SPDebugMenuAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDebugMenuAction.h; sourceTree = "<group>"; };
@@ -191,6 +194,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40DD545118C3E349007D3163 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				49672EED1891CEFE00220147 /* SPSendReportAction.h */,
+				49672EEE1891CEFE00220147 /* SPSendReportAction.m */,
+				49672EEF1891CEFE00220147 /* SPSendReportStatusComposing.h */,
+				40DD545218C3E359007D3163 /* SPSimulateMemoryWarningAction.h */,
+				40DD545318C3E359007D3163 /* SPSimulateMemoryWarningAction.m */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
 		49672EDC1891CEFE00220147 /* SPDebugMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +215,7 @@
 				49672EDE1891CEFE00220147 /* SPDebugMenu.m */,
 				49672EDF1891CEFE00220147 /* SPDebugMenuAction.h */,
 				49672EE81891CEFE00220147 /* SPDebugMenuTriggering.h */,
-				49672EED1891CEFE00220147 /* SPSendReportAction.h */,
-				49672EEE1891CEFE00220147 /* SPSendReportAction.m */,
-				49672EEF1891CEFE00220147 /* SPSendReportStatusComposing.h */,
+				40DD545118C3E349007D3163 /* Actions */,
 			);
 			name = SPDebugMenu;
 			path = ../SPDebugMenu;
@@ -310,6 +323,7 @@
 				49672EFE1891CEFE00220147 /* SPSendReportAction.m in Sources */,
 				49672EFC1891CEFE00220147 /* SPDebugMenuViewController.m in Sources */,
 				49672EF81891CEFE00220147 /* SPDebugMenuActionCell.m in Sources */,
+				40DD545418C3E359007D3163 /* SPSimulateMemoryWarningAction.m in Sources */,
 				400DC8551837A823005EE481 /* SPExampleSettings.m in Sources */,
 				49672EFF1891CEFE00220147 /* SPShakeTriggerWindow.m in Sources */,
 				49672EF71891CEFE00220147 /* SPDebugMenu.m in Sources */,

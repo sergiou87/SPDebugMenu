@@ -32,6 +32,7 @@
 #import "SPExampleStatusComposer.h"
 #import "SPImmediateChangeSettingAction.h"
 #import "SPShakeTriggerWindow.h"
+#import "SPSimulateMemoryWarningAction.h"
 #import "SPSendReportAction.h"
 #import "SPViewBasedChangeSettingAction.h"
 #import "SPViewController.h"
@@ -81,6 +82,10 @@
     SPSendReportAction *sendReportAction = [[SPSendReportAction alloc] init];
     sendReportAction.statusComposer = statusComposer;
     [self.debugMenu registerAction:sendReportAction];
+    
+    // Configure an action to simulate a memory warning
+    SPSimulateMemoryWarningAction *simulateMemoryWarningAction = [[SPSimulateMemoryWarningAction alloc] init];
+    [self.debugMenu registerAction:simulateMemoryWarningAction];
 
     // Configure an immediate change action
     SPImmediateChangeSettingAction *immediateChangeSettingAction = [[SPImmediateChangeSettingAction alloc] init];

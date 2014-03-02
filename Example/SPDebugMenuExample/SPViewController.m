@@ -67,4 +67,14 @@
     [alertView show];
 }
 
+- (void)didReceiveMemoryWarning
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@":O"
+                                                        message:@"What's this? It's a memory warning notification!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+    [alertView show];
+}
+
 @end
