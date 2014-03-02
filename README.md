@@ -7,6 +7,7 @@ It supports:
 * Different ways to trigger it: shaking the device, multiple taps or long press on the screen.
 * Customized debug actions.
 * Send a report via e-mail with a screenshot and some useful information.
+* Simulate a memory warning notification in your device
 
 ## Install
 
@@ -104,6 +105,8 @@ If none of these triggers suits you, you can always write your own trigger. You 
 
 The actions are shown in a simple menu and will allow the user to change some settings or perform some actions useful to developers in debug builds.
 
+#### Send report
+
 The most typical action you would use is sending an e-mail to a developer or an issue tracking system with a screenshot and some information when you find a bug. SPDebugMenu includes the ```SPSendReportAction``` action which already allows you all of this. It will show a mail composer screen with some data already filled in (including a screenshot of the current state of the app). The data filled in is gathered through a class implementing the ```SPSendReportStatusComposing``` protocol with three methods:
 * ```currentStatus```: a ```NSString``` with the text to be sent (gathering some info like the current user, connection state, etc.).
 * ```subject```: subject of the e-mail to be sent.
@@ -117,6 +120,18 @@ SPSendReportAction *sendReportAction = [[SPSendReportAction alloc] init];
 sendReportAction.statusComposer = statusComposer;
 [self.debugMenu registerAction:sendReportAction];
 ```
+
+#### Simulate memory warning
+
+If you want to simulate a memory warning in your device, there is an action called ```SPSimulateMemoryWarningAction``` that you can include in your debug menu for that purpose.
+
+```objective-c
+// Configure a "Simulate memory warning" action
+SPSimulateMemoryWarningAction *simulateMemoryWarningAction = [[SPSimulateMemoryWarningAction alloc] init];
+[self.debugMenu registerAction:simulateMemoryWarningAction];
+```
+
+#### Custom actions
 
 For customized actions, you can create a class implementing the ```SPDebugMenuAction``` protocol with the following methods:
 
