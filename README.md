@@ -166,6 +166,10 @@ If you want to contribute to the project just follow this steps:
 3. Create your feature branch.
 4. Commit your changes, push to your fork and submit a pull request.
 
+## Apps using SPDebugMenu
+
+* [Fever](https://itunes.apple.com/us/app/fever-event-discovery-app/id497702817?mt=8)
+
 ## License
 
 SPDebugMenu is available under the MIT license. See the [LICENSE file](https://github.com/sergiou87/SPDebugMenu/blob/master/LICENSE) for more info.
