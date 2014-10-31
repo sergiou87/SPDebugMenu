@@ -42,6 +42,7 @@
 @property (nonatomic, strong) NSMutableArray *triggers;
 @property (nonatomic, strong) NSMutableArray *actions;
 
+@property (nonatomic, assign, readonly) BOOL isMenuVisible;
 @end
 
 #pragma mark - SPDebugMenu class implementation
@@ -141,7 +142,7 @@
 
 - (void)debugMenuWasTriggered:(id<SPDebugMenuTriggering>)sender
 {
-    if (!self.navigationController.view.window)
+    if (!self.isMenuVisible)
     {
         [self prepareActions];
         [self showDebugMenu];
@@ -154,6 +155,12 @@
 {
     [self dismissDebugMenu];
     [self disposeActions];
+}
+
+#pragma mark - Overrides
+
+- (BOOL)isMenuVisible {
+	return !!self.navigationController.view.window;
 }
 
 @end
