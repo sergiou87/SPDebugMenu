@@ -42,7 +42,9 @@
 @property (nonatomic, strong) NSMutableArray *triggers;
 @property (nonatomic, strong) NSMutableArray *actions;
 
-@property (nonatomic, assign, readonly) BOOL isMenuVisible;
+@property (nonatomic, getter=isPresentingMenu) BOOL presentingMenu;
+@property (nonatomic, readonly, getter=isMenuVisible) BOOL menuVisible;
+
 @end
 
 #pragma mark - SPDebugMenu class implementation
@@ -115,16 +117,20 @@
     viewController.delegate = self;
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
+    self.presentingMenu = YES;
     [self.topMostViewController presentViewController:self.navigationController
                                              animated:YES
-                                           completion:nil];
+                                           completion:^{
+                                               self.presentingMenu = NO;
+                                           }];
 }
 
 - (void)dismissDebugMenu
 {
     [self.navigationController.presentingViewController dismissViewControllerAnimated:YES
-                                                                           completion:nil];
-    self.navigationController = nil;
+                                                                           completion:^{
+                                                                               self.navigationController = nil;
+                                                                           }];
 }
 
 - (UIViewController *)topMostViewController
@@ -142,11 +148,19 @@
 
 - (void)debugMenuWasTriggered:(id<SPDebugMenuTriggering>)sender
 {
-    if (!self.isMenuVisible)
-    {
-        [self prepareActions];
-        [self showDebugMenu];
-    }
+    if (![self canShowMenu])
+        return;
+
+    [self prepareActions];
+    [self showDebugMenu];
+}
+
+- (BOOL)canShowMenu
+{
+    return (!self.presentingMenu
+            && !self.menuVisible
+            && !self.navigationController.isBeingDismissed
+            && self.topMostViewController.view.window != nil);
 }
 
 #pragma mark - SPDebugMenuViewControllerDelegate methods
@@ -159,8 +173,9 @@
 
 #pragma mark - Overrides
 
-- (BOOL)isMenuVisible {
-	return !!self.navigationController.view.window;
+- (BOOL)isMenuVisible
+{
+	return self.navigationController.view.window != nil;
 }
 
 @end
