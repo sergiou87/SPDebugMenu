@@ -44,11 +44,6 @@
     return @"Enable the magic from another view controller";
 }
 
-- (void)prepare
-{
-    // Do nothing
-}
-
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
 {
     [self.delegate debugMenuActionDidStart:self];
@@ -57,11 +52,6 @@
     controller.delegate = self;
     controller.settings = self.settings;
     [navigationController pushViewController:controller animated:YES];
-}
-
-- (void)dispose
-{
-    // Do nothing
 }
 
 - (BOOL)shouldDismissDebugMenuAfterFinish

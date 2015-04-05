@@ -99,7 +99,8 @@
 {
     for (id<SPDebugMenuAction> action in self.actions)
     {
-        [action prepare];
+        if ([action respondsToSelector:@selector(prepare)])
+            [action prepare];
     }
 }
 
@@ -107,7 +108,8 @@
 {
     for (id<SPDebugMenuAction> action in self.actions)
     {
-        [action dispose];
+        if ([action respondsToSelector:@selector(dispose)])
+            [action dispose];
     }
 }
 

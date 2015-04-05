@@ -22,11 +22,6 @@
     return @"Simulates a memory warning notification.";
 }
 
-- (void)prepare
-{
-
-}
-
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
 {
     [self.delegate debugMenuActionDidStart:self];
@@ -41,11 +36,6 @@
 #pragma clang diagnostic pop
     
     [self.delegate debugMenuActionDidEnd:self];
-}
-
-- (void)dispose
-{
-
 }
 
 - (BOOL)shouldDismissDebugMenuAfterFinish

@@ -40,11 +40,6 @@
     return @"Toggle magic from here";
 }
 
-- (void)prepare
-{
-    // Do nothing
-}
-
 - (void)performActionWithNavigationController:(UINavigationController *)navigationController
 {
     [self.delegate debugMenuActionDidStart:self];
@@ -52,11 +47,6 @@
     self.settings.magicEnabled = !self.settings.magicEnabled;
     
     [self.delegate debugMenuActionDidEnd:self];
-}
-
-- (void)dispose
-{
-    // Do nothing
 }
 
 - (BOOL)shouldDismissDebugMenuAfterFinish
